@@ -20,7 +20,7 @@ data "vsphere_host" "default" {
 }
 
 resource "vsphere_host_port_group" "portgroup" {
-    name            = "Atlantis-Test1"
+    name            = "Atlantis-Test"
     host_system_id  = data.vsphere_host.default.id
     virtual_switch_name = var.virtual_switch
 }
